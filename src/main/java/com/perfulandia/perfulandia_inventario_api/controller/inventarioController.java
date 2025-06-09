@@ -51,7 +51,7 @@ public class inventarioController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    
+
 
     
     
