@@ -1,6 +1,5 @@
 package com.perfulandia.perfulandia_inventario_api.controller;
 
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -8,7 +7,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import jakarta.persistence.criteria.CriteriaBuilder.In;
 import com.perfulandia.perfulandia_inventario_api.service.inventarioService;
 import com.perfulandia.perfulandia_inventario_api.dto.*;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -50,6 +48,8 @@ public class inventarioController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+
+    
 
 
 
